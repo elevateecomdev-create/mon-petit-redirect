@@ -1,0 +1,33 @@
+{
+  "redirects": [
+    {
+      "source": "/",
+      "has": [
+        {
+          "type": "header",
+          "key": "x-vercel-ip-country",
+          "value": "AO"
+        }
+      ],
+      "destination": "https://mon-petit.co/",
+      "permanent": false
+    },
+    {
+      "source": "/",
+      "has": [
+        {
+          "type": "header",
+          "key": "x-vercel-ip-country",
+          "value": "(CD|CG)"
+        }
+      ],
+      "destination": "https://www.monpetit.co/",
+      "permanent": false
+    },
+    {
+      "source": "/",
+      "destination": "https://mon-petit.co/",
+      "permanent": false
+    }
+  ]
+}
